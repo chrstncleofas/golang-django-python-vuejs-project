@@ -84,5 +84,5 @@ func main() {
 	router.HandleFunc("/students", createStudent).Methods("POST")
 	router.HandleFunc("/students/{id}", updateStudent).Methods("PUT")
 	router.HandleFunc("/students/{id}", deleteStudent).Methods("DELETE")
-	log.Fatal(http.ListenAndServe(":8000", router))
+	log.Fatal(http.ListenAndServe(":8001", router))
 }
