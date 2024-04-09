@@ -1,4 +1,3 @@
-import requests
 from .models import Students
 from django.http import JsonResponse
 from app.serializers import StudentSerializer
