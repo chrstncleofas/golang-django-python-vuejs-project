@@ -5,9 +5,9 @@ class StudentSerializer(serializers.ModelSerializer):
     class Meta:
         model=Students 
         fields=(
-            'studentid',
-            'fname',
-            'lname',
-            'address',
-            'email'
+            'StudentID',
+            'Firstname',
+            'Lastname',
+            'Address',
+            'Email'
         )

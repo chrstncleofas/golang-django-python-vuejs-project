@@ -1,10 +1,8 @@
-from . import views
-from django.urls import path
+from app import views
+from django.conf.urls import url
 
 urlpatterns = [
-    path('students/', views.get_all_students, name='get_all_students'),
-    path('students/<int:student_id>/', views.get_student, name='get_student'),
-    path('students/create/', views.create_student, name='create_student'),
-    path('students/<int:student_id>/update/', views.update_student, name='update_student'),
-    path('students/<int:student_id>/delete/', views.delete_student, name='delete_student'),
+    # Frontend API
+    url(r'^students$',views.studentsApi),
+    url(r'^students/([0-9]+)$',views.studentsApi),
 ]
